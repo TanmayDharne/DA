@@ -1,0 +1,33 @@
+1) Log In using Not Listed
+username-root password-fedora
+
+2) Go to hadoop-3.2.0 directory
+run - 	bin/hadoop namenode -formmat
+	bin/hadoop namenode
+In browser: localhost:9870/
+
+3) sbin/start-all.sh (to start hadoop server)
+
+4) jps (to check namenode)
+
+5) Check history
+
+6) Create a text file for input (inp.txt). Put it in hadoop directory.
+
+7) Create directory:
+bin/hadoop dfs -mkdir /user
+bin/hadoop dfs -mkdir /user/input
+
+8) bin/hadoop dfs -put inp.txt /user/input/inp.txt
+
+9) bin/hadoop com.sun.tools.javac.Main WordCount.java  (compile in hadoop directory)
+
+10)jar cf wordcnt.jar WordCount*.class
+
+11)bin/hadoop jar wordcnt.jar WordCount /user/input user/output/out  (to execute jar)
+
+12)bin/hadoop dfs -ls user/output/out  (list output files - success, r-000 whatever)
+
+13)bin/hadoop dfs -cat user/output/out/part-r-00000
+
+Word counts will be printed

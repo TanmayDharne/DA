@@ -1,0 +1,173 @@
+bike=read.csv('bike.csv')
+View(bike)
+is.na(bike)
+bike$Member.type=factor(bike$Member.type,levels = c('Member','Casual'),labels = c(0,1))
+bike=read.csv('bike.csv')
+library(caTools)
+library(e1071)
+is.na(bike)
+bike$Member.type=factor(bike$Member.type,levels = c('Member','Casual'),labels = c(1,0))
+bike$Bike.number=as.numeric(Bike.number)
+bike$Bike.number=as.numeric(bike$Bike.number)
+sample.seed(100)
+split=sample.split(bike,SpitRatio=7/10)
+sample.seed(100)
+split=sample.split(bike,SplitRatio=7/10)
+set.seed(100)
+split=sample.split(bike,SplitRatio=7/10)
+train=subset(bike,split==TRUE)
+test=subset(bike,split==FALSE)
+train=train[,c(1,8,9)]
+train=train[,c(1,8,9)]
+test=test[,c(1,8,9)]
+bike=read.csv('bike.csv')
+library(caTools)
+library(e1071)
+bike$Member.type=factor(bike$Member.type,levels = c('Member','Casual'),labels = c(1,0))
+bike$Bike.number=as.numeric(bike$Bike.number)
+set.seed(100)
+split=sample.split(bike,SplitRatio=7/10)
+train=subset(bike,split==TRUE)
+test=subset(bike,split==FALSE)
+train=train[,c(1,8,9)]
+test=test[,c(1,8,9)]
+bike=read.csv('bike.csv')
+library(caTools)
+library(e1071)
+bike$Member.type=factor(bike$Member.type,levels = c('Member','Casual'),labels = c(1,0))
+bike$Bike.number=as.numeric(bike$Bike.number)
+set.seed(100)
+split=sample.split(bike,SplitRatio=7/10)
+train=subset(bike,split==TRUE)
+test=subset(bike,split==FALSE)
+train=train[,c(1,8,9)]
+test=test[,c(1,8,9)]
+classifier=naiveBayes(x=train[-3],y=train$Member.type)
+a=predict(classifier,test[-3])
+library(caret)
+cf=confusionMatrix(a,test$Member.type)
+cf
+bike=read.csv('bike.csv')
+library(caTools)
+library(e1071)
+bike$Member.type=factor(bike$Member.type,levels = c('Member','Casual'),labels = c(1,0))
+bike$Bike.number=as.numeric(bike$Bike.number)
+set.seed(100)
+split=sample.split(bike,SplitRatio=7/10)
+train=subset(bike,split==TRUE)
+test=subset(bike,split==FALSE)
+train=train[,c(1,8,9)]
+test=test[,c(1,8,9)]
+classifier=naiveBayes(x=train[-3],y=train$Member.type)
+a=predict(classifier,test[-3])
+library(caret)
+cf=confusionMatrix(a,test$Member.type)
+cf
+dataset = read.csv('bike.csv')
+str(dataset)
+summary(dataset)
+library(caret)
+library(caTools)
+library(e1071)
+dataset$Member.type = factor(dataset$Member.type, levels = c('Casual, Member'), labels = c(0, 1))
+dataset$Bike.number = as.numeric(dataset$Bike.number)
+split_data = sample.split(dataset, SplitRatio = 4/5)
+train_set = subset(dataset, split_data == TRUE)
+test_set = subset(dataset, split_data == FALSE)
+train_set = train_set[, c(1, 8, 9)]
+test_set = test_set[, c(1, 8, 9)]
+classifier = naiveBayes(x = train_set[-9], y = train_set$Member.type)
+classifier
+predicted_data = predict(classifier, test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Member.type)
+cf
+dataset = read.csv('bike.csv')
+str(dataset)
+summary(dataset)
+library(caret)
+library(caTools)
+library(e1071)
+dataset$Member.type = factor(dataset$Member.type, levels = c('Casual', 'Member'), labels = c(0, 1))
+dataset$Bike.number = as.numeric(dataset$Bike.number)
+split_data = sample.split(dataset, SplitRatio = 4/5)
+train_set = subset(dataset, split_data == TRUE)
+test_set = subset(dataset, split_data == FALSE)
+train_set = train_set[, c(1, 8, 9)]
+test_set = test_set[, c(1, 8, 9)]
+classifier = naiveBayes(x = train_set[-9], y = train_set$Member.type)
+classifier
+predicted_data = predict(classifier, test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Member.type)
+cf
+dataset = read.csv('bike.csv')
+str(dataset)
+summary(dataset)
+library(caret)
+library(caTools)
+library(e1071)
+dataset$Member.type = factor(dataset$Member.type, levels = c('Casual', 'Member'), labels = c(0, 1))
+dataset$Bike.number = as.numeric(dataset$Bike.number)
+split_data = sample.split(dataset, SplitRatio = 7/10)
+train_set = subset(dataset, split_data == TRUE)
+test_set = subset(dataset, split_data == FALSE)
+train_set = train_set[, c(1, 8, 9)]
+test_set = test_set[, c(1, 8, 9)]
+classifier = naiveBayes(x = train_set[-9], y = train_set$Member.type)
+classifier
+predicted_data = predict(classifier, test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Member.type)
+cf
+dataset = read.csv('bike.csv')
+str(dataset)
+summary(dataset)
+library(caret)
+library(caTools)
+library(e1071)
+dataset$Member.type = factor(dataset$Member.type, levels = c('Casual', 'Member'), labels = c(0, 1))
+dataset$Bike.number = as.numeric(dataset$Bike.number)
+split_data = sample.split(dataset, SplitRatio = 7/10)
+train_set = subset(dataset, split_data == TRUE)
+test_set = subset(dataset, split_data == FALSE)
+train_set = train_set[, c(1, 8, 9)]
+test_set = test_set[, c(1, 8, 9)]
+classifier = naiveBayes(x = train_set[-9], y = train_set$Member.type)
+classifier
+predicted_data = predict(classifier, test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Member.type)
+cf
+dataset = read.csv('bike.csv')
+library(caret)
+library(caTools)
+library(e1071)
+dataset$Member.type = factor(dataset$Member.type, levels = c('Casual', 'Member'), labels = c(0, 1))
+dataset$Bike.number = as.numeric(dataset$Bike.number)
+split_data = sample.split(dataset, SplitRatio = 7/10)
+train_set = subset(dataset, split_data == TRUE)
+test_set = subset(dataset, split_data == FALSE)
+train_set = train_set[, c(1, 8, 9)]
+test_set = test_set[, c(1, 8, 9)]
+classifier = naiveBayes(x = train_set[-3], y = train_set$Member.type)
+classifier
+predicted_data = predict(classifier, test_set[-3])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Member.type)
+cf
+dataset = read.csv('bike.csv')
+library(caret)
+library(caTools)
+library(e1071)
+dataset$Member.type = factor(dataset$Member.type, levels = c('Casual', 'Member'), labels = c(0, 1))
+dataset$Bike.number = as.numeric(dataset$Bike.number)
+split_data = sample.split(dataset, SplitRatio = 7/10)
+train_set = subset(dataset, split_data == TRUE)
+test_set = subset(dataset, split_data == FALSE)
+train_set = train_set[, c(1, 8, 9)]
+test_set = test_set[, c(1, 8, 9)]
+classifier = naiveBayes(x = train_set[-3], y = train_set$Member.type)
+predicted_data = predict(classifier, test_set[-3])
+cf = confusionMatrix(predicted_data, test_set$Member.type)
+cf

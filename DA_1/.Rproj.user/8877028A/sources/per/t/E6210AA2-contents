@@ -1,0 +1,27 @@
+dataset = read.csv('iris.csv')
+#dataset = read.csv('iris.csv',col.names = c("sl","sw","pl","pw","sp"))                
+str(dataset) # gives the features and datatyes
+lapply(dataset,class)# gives the features and datatyes
+ncol(dataset)
+summary(dataset)
+
+mean(dataset$Sepal.Length)
+min(dataset$Sepal.Length)
+max(dataset$Sepal.Length)
+sum(dataset$Sepal.Length)
+sd(dataset$Sepal.Length)
+var(dataset$Sepal.Length)
+range(dataset$Sepal.Length)
+
+
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist',ylab='bbbb',col="pink")
+hist(dataset$Sepal.Width)
+st= as.numeric(dataset$Species)
+hist(st)
+
+boxplot(dataset$Sepal.Length)
+boxplot(dataset$Sepal.Width)$out
+boxplot(dataset$Petal.Length)$out
+boxplot(dataset$Petal.Width)$out
+boxplot(Petal.Width~Species, data=dataset, col=c("pink"))
+boxplot(dataset)$out

@@ -1,0 +1,269 @@
+dataset = read.csv('iris.csv')
+str(dataset)
+lapply(dataset,class)
+ncol(dataset)
+summary(dataset)
+str(dataset)
+mean(dataset$Sepal.Length)
+min(dataset$Sepal.Length)
+max(dataset$Sepal.Length)
+sum(dataset$Sepal.Length)
+sd(dataset$Sepal.Length)
+var(dataset$Sepal.Length)
+range(dataset$Sepal.Length)
+quantile(dataset$Sepal.Length,probs = 0.1)
+quantile(dataset$Sepal.Length,c(0.1,0.2))
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+hist(dataset$Sepal.Width)
+str(dataset)
+lapply(dataset,class)
+ncol(dataset)
+summary(dataset)
+mean(dataset$Sepal.Length)
+min(dataset$Sepal.Length)
+max(dataset$Sepal.Length)
+sum(dataset$Sepal.Length)
+sd(dataset$Sepal.Length)
+var(dataset$Sepal.Length)
+range(dataset$Sepal.Length)
+quantile(dataset$Sepal.Length,probs = 0.1)
+quantile(dataset$Sepal.Length,c(0.1,0.2))
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+hist(dataset$Sepal.Width)
+st= as.numeric(dataset$Species)
+hist(st)
+boxplot(dataset$Sepal.Length)$out
+boxplot(dataset$Sepal.Width,notch = TRUE)
+boxplot(dataset$Petal.Length)$out
+boxplot(dataset$Petal.Width)$out
+boxplot(st)$out
+boxplot(dataset)$out
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+hist(dataset$Sepal.Width)
+st= as.numeric(dataset$Species)
+hist(st)
+boxplot(dataset$Sepal.Length)$out
+boxplot(dataset$Petal.Length)$out
+boxplot(dataset$Petal.Length)$out
+summary(dataset)
+boxplot(dataset$Petal.Length)$out
+boxplot(dataset$Sepal.Width,notch = TRUE)
+boxplot(dataset$Sepal.Width)
+boxplot(dataset$Sepal.Width)$out
+dataset = read.csv('dia.csv')
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+dataset = read.csv('iris.csv')
+sd(dataset$Sepal.Length)
+dataset = read.csv('iris.csv')
+str(dataset)
+lapply(dataset,class)
+ncol(dataset)
+summary(dataset)
+mean(dataset$Sepal.Length)
+min(dataset$Sepal.Length)
+max(dataset$Sepal.Length)
+sum(dataset$Sepal.Length)
+sd(dataset$Sepal.Length)
+var(dataset$Sepal.Length)
+range(dataset$Sepal.Length)
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+hist(dataset$Sepal.Width)
+st= as.numeric(dataset$Species)
+hist(st)
+boxplot(dataset$Sepal.Length)$out
+boxplot(dataset$Sepal.Width)$out
+boxplot(dataset$Petal.Length)$out
+boxplot(dataset$Petal.Width)$o
+boxplot(dataset)$out
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+boxplot(dataset$Sepal.Length)$out
+boxplot(dataset$Sepal.Length)
+boxplot(dataset$Sepal.Length)$out
+dataset = read.csv('iris.csv')
+str(dataset)
+lapply(dataset,class)
+ncol(dataset)
+summary(dataset)
+mean(dataset$Sepal.Length)
+min(dataset$Sepal.Length)
+max(dataset$Sepal.Length)
+sum(dataset$Sepal.Length)
+sd(dataset$Sepal.Length)
+var(dataset$Sepal.Length)
+range(dataset$Sepal.Length)
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+hist(dataset$Sepal.Width)
+st= as.numeric(dataset$Species)
+hist(st)
+boxplot(dataset$Sepal.Length)$out
+boxplot(dataset$Sepal.Width)$out
+boxplot(dataset$Petal.Length)$out
+boxplot(dataset$Petal.Width)$o
+boxplot(dataset)$out
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+hist(dataset$Sepal.Width)
+dataset = read.csv('dia.csv')
+str(dataset)
+summary(dataset)
+lapply(dataset, class)
+library(e1071)
+library(caTools)
+library(caret)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+dataset = read.csv('dia.csv')
+str(dataset)
+summary(dataset)
+lapply(dataset, class)
+library(e1071)
+library(caTools)
+library(caret)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+dataset = read.csv('dia.csv')
+str(dataset)
+summary(dataset)
+lapply(dataset, class)
+library(e1071)
+library(caTools)
+library(caret)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+dataset = read.csv('dia.csv')
+str(dataset)
+summary(dataset)
+lapply(dataset, class)
+library(e1071)
+library(caTools)
+library(caret)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+dataset = read.csv('dia.csv')
+str(dataset)
+summary(dataset)
+lapply(dataset, class)
+library(e1071)
+library(caTools)
+library(caret)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+dataset = read.csv('dia.csv')
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+dataset = read.csv('iris.csv')
+str(dataset)
+lapply(dataset,class)
+ncol(dataset)
+summary(dataset)
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+hist(dataset$Sepal.Width)
+st= as.numeric(dataset$Species)
+hist(st)
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist',ylab='bbbb')
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist',ylab='bbbb')
+hist(dataset$Sepal.Width)
+st= as.numeric(dataset$Species)
+st= as.numeric(dataset$Species)
+hist(st)
+boxplot(dataset$Sepal.Length)
+boxplot(dataset$Sepal.Width)$out
+boxplot(dataset)$out
+boxplot(dataset$Sepal.Length)
+boxplot(dataset$Sepal.Width)$out
+boxplot(dataset$Petal.Width)$o
+boxplot(dataset$Petal.Width)$out
+boxplot(Petal.Width~Species)
+boxplot(Petal.Width~Species, data=dataset)
+boxplot(Petal.Width~Species, data=dataset, col=c("pink"))
+lapply(dataset,class)# gives the features and datatyes
+dataset = read.csv('iris.csv', col.names = c("sl","sw","pl","pw","sp"))
+str(dataset) # gives the features and datatyes
+lapply(dataset,class)# gives the features and datatyes
+ncol(dataset)
+summary(dataset)
+dataset = read.csv('iris.csv', col.names = c("sl","sw","pl","pw","sp"))
+str(dataset) # gives the features and datatyes
+lapply(dataset,class)# gives the features and datatyes
+ncol(dataset)
+summary(dataset)
+mean(dataset$Sepal.Length)
+min(dataset$Sepal.Length)
+max(dataset$Sepal.Length)
+sum(dataset$Sepal.Length)
+sd(dataset$Sepal.Length)
+var(dataset$Sepal.Length)
+range(dataset$Sepal.Length)
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist',ylab='bbbb')
+hist(dataset$Sepal.Width)
+st= as.numeric(dataset$Species)
+hist(st)
+boxplot(dataset$Sepal.Length)
+boxplot(dataset$Sepal.Width)$out
+boxplot(dataset$Petal.Length)$out
+boxplot(dataset$Petal.Width)$out
+boxplot(Petal.Width~Species, data=dataset, col=c("pink"))
+boxplot(dataset)$out
+dataset = read.csv('iris.csv')
+#dataset = read.csv('iris.csv',col.names = c("sl","sw","pl","pw","sp"))
+str(dataset) # gives the features and datatyes
+lapply(dataset,class)# gives the features and datatyes
+ncol(dataset)
+summary(dataset)
+mean(dataset$Sepal.Length)
+min(dataset$Sepal.Length)
+max(dataset$Sepal.Length)
+sum(dataset$Sepal.Length)
+sd(dataset$Sepal.Length)
+var(dataset$Sepal.Length)
+range(dataset$Sepal.Length)
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist',ylab='bbbb')
+hist(dataset$Sepal.Width)
+st= as.numeric(dataset$Species)
+hist(st)
+boxplot(dataset$Sepal.Length)
+boxplot(dataset$Sepal.Width)$out
+boxplot(dataset$Petal.Length)$out
+boxplot(dataset$Petal.Width)$out
+boxplot(Petal.Width~Species, data=dataset, col=c("pink"))
+boxplot(dataset)$out
+boxplot(Petal.Width~Species, data=dataset, col=c("pink"))
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist',ylab='bbbb')
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist',ylab='bbbb',col="pink")

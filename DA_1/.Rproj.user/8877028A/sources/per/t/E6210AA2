@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571628169059.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2133530708",
+    "id" : "E6210AA2",
+    "lastKnownWriteTime" : 1571727429,
+    "last_content_update" : 1571727429976,
+    "path" : "C:/Users/shivani/Desktop/my asss/DA/DA_1/da1.R",
+    "project_path" : "da1.R",
+    "properties" : {
+        "cursorPosition" : "26,20",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

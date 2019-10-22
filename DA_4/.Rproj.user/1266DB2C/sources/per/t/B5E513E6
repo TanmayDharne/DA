@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1540293437382.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2081703217",
+    "id" : "B5E513E6",
+    "lastKnownWriteTime" : 1540295267,
+    "last_content_update" : 1540295267865,
+    "path" : "C:/Users/DELL/Desktop/DA4/da4.R",
+    "project_path" : "da4.R",
+    "properties" : {
+        "cursorPosition" : "15,2",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

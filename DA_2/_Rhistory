@@ -1,0 +1,81 @@
+dataset = read.csv('dia.csv')
+str(dataset)
+summary(dataset)
+lapply(dataset, class)
+dataset = read.csv('dia.csv')
+lapply(dataset, class)
+library(e1071)
+library(caTools)
+library(caret)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+classifier
+predicted_data
+cf
+library(caTools)
+library(e1071)
+bike$Member.type=factor(bike$Member.type,levels = c('Member','Casual'),labels = c(1,0))
+bike$Bike.number=as.numeric(bike$Bike.number)
+set.seed(100)
+split=sample.split(bike,SplitRatio=7/10)
+train=subset(bike,split==TRUE)
+test=subset(bike,split==FALSE)
+train=train[,c(1,8,9)]
+test=test[,c(1,8,9)]
+classifier=naiveBayes(x=train[-3],y=train$Member.type)
+a=predict(classifier,test[-3])
+library(caret)
+cf=confusionMatrix(a,test$Member.type)
+cf
+bike=read.csv('bike.csv')
+library(caTools)
+library(e1071)
+bike$Member.type=factor(bike$Member.type,levels = c('Member','Casual'),labels = c(1,0))
+bike$Bike.number=as.numeric(bike$Bike.number)
+set.seed(100)
+split=sample.split(bike,SplitRatio=7/10)
+train=subset(bike,split==TRUE)
+test=subset(bike,split==FALSE)
+train=train[,c(1,8,9)]
+test=test[,c(1,8,9)]
+classifier=naiveBayes(x=train[-3],y=train$Member.type)
+a=predict(classifier,test[-3])
+library(caret)
+cf=confusionMatrix(a,test$Member.type)
+cf
+cf
+bike=read.csv('bike.csv')
+library(caTools)
+library(e1071)
+bike$Member.type=factor(bike$Member.type,levels = c('Member','Casual'),labels = c(1,0))
+bike$Bike.number=as.numeric(bike$Bike.number)
+set.seed(100)
+split=sample.split(bike,SplitRatio=7/10)
+train=subset(bike,split==TRUE)
+test=subset(bike,split==FALSE)
+train=train[,c(1,8,9)]
+test=test[,c(1,8,9)]
+classifier=naiveBayes(x=train[-3],y=train$Member.type)
+a=predict(classifier,test[-3])
+library(caret)
+cf=confusionMatrix(a,test$Member.type)
+cf
+str(dataset)
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+hist(dataset$Sepal.Width)
+st= as.numeric(dataset$Species)
+hist(st)
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+hist(dataset$Sepal.Length,border='red',xlab = 'petal length',main='hist')
+boxplot(dataset$Sepal.Length)$out

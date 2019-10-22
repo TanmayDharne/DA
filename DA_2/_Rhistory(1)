@@ -1,0 +1,182 @@
+dataset= read.csv('dia.csv', header = "True", sep = ",")
+dataset= read.csv('dia.csv')
+str(dataset)
+library(caTools)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1))
+dataset = read.csv('dia.csv')
+str(dataset)
+library(e1071)
+lapply(dataset, class)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+lapply(dataset, class)
+sample.split(dataset, SplitRatio = 2/3, group = NULL)
+?sample.split
+train_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set = TRUE)
+train_set = subset(dataset, split_set == TRUE)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+train_set = subset(dataset, split_set == TRUE)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(train_set)
+?naiveBayes
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+predicted_data = predict(classifier, test_set$Outcome)
+predicted_data = predict(classifier, newdata =test_set$Outcome)
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+cm
+?cm
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+library(caret)
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+classifier
+summary(dataset)
+summary(dataset)
+classifier
+summary(train_set)
+classifier
+dataset = read.csv('dia.csv')
+str(dataset)
+summary(dataset)
+library(e1071)
+library(caTools)
+lapply(dataset, class)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+summary(train_set)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+cm
+library(caret)
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+cm
+?cm
+dataset = read.csv('dia.csv')
+str(dataset)
+summary(dataset)
+lapply(dataset, class)
+library(e1071)
+library(caTools)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+summary(train_set)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+library(caret)
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+install.packages("lattice")
+library(caret)
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+warnings()
+dataset = read.csv('dia.csv')
+str(dataset)
+lapply(dataset, class)
+ncol(dataset)
+summary(dataset)
+dataset = read.csv('dia.csv')
+str(dataset)
+lapply(dataset, class)
+ncol(dataset)
+summary(dataset)
+dataset = read.csv('dia.csv')
+str(dataset)
+lapply(dataset, class)
+ncol(dataset)
+summary(dataset)
+library(caret)
+library(caTools)
+library(e1071)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_data = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_data = TRUE)
+test_set = subset(dataset, split_data = FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, test_set$Outcome)
+predicted_data
+predicted_data = predict(classifier, test_set[-9])
+predicted_data
+library(caret)
+library(caTools)
+library(e1071)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_data = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_data == TRUE)
+test_set = subset(dataset, split_data == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+dataset = read.csv('dia.csv')
+str(dataset)
+summary(dataset)
+lapply(dataset, class)
+library(e1071)
+library(caTools)
+library(caret)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+dataset = read.csv('dia.csv')
+str(dataset)
+ncol(dataset)
+lapply(dataset, class)
+summary(dataset)
+library(caret)
+library(caTools)
+library(e1071)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, newdata = test_set$Outcome)
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf
+dataset = read.csv('dia.csv')
+str(dataset)
+ncol(dataset)
+lapply(dataset, class)
+summary(dataset)
+library(caret)
+library(caTools)
+library(e1071)
+dataset$Outcome = factor(dataset$Outcome, levels = c(0, 1), labels = c(0, 1))
+split_set = sample.split(dataset, SplitRatio = 2/3)
+train_set = subset(dataset, split_set == TRUE)
+test_set = subset(dataset, split_set == FALSE)
+classifier = naiveBayes(x = train_set[-9], y = train_set$Outcome)
+classifier
+predicted_data = predict(classifier, newdata = test_set[-9])
+predicted_data
+cf = confusionMatrix(predicted_data, test_set$Outcome)
+cf

@@ -1,0 +1,5 @@
+HADOOP:
+	Apache Hadoop is a collection of open-source software utilities that facilitate using a network of many computers to solve problems involving massive amounts of 		data and computation. 
+Regression:	
+	Regression is a statistical measurement used in finance, investing, and other disciplines that attempts to determine the strength of the relationship between one 		dependent variable (usually denoted by Y) and a series of other changing variables (known as independent variables).
+
